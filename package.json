@@ -1,0 +1,22 @@
+{
+  "name": "saveniukoleg-website",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saveniukoleg/saveniukoleg-website.git"
+  },
+  "author": "Oleg Saveniuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saveniukoleg/saveniukoleg-website/issues"
+  },
+  "homepage": "https://github.com/saveniukoleg/saveniukoleg-website#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
