@@ -22,13 +22,23 @@ $background-opacity: 0.9;
         right: 0;
         width: 100%;
         height: 100%;
-        background: rgba($primary-color, $background-opacity);
         z-index: -1;
+        background: rgba($primary-color, $background-opacity);
       }
     }
   }
 }
 
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
